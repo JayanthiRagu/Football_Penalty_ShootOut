@@ -1,0 +1,86 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    display: grid;
+    grid-template-rows: 10% 80%;
+    background-color:rgb(42, 165, 149);
+    align-self: center;
+    height:100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height:350px;
+    width: 500px;
+    background-color: white;
+    padding:50px;
+    align-self: center;
+    border-radius: 20px;
+    margin:auto;
+}
+.row{
+    display: flex;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name,.score
+{
+    font-size: 20px;
+    padding:5px;
+}
+.score
+{
+    padding:15px;
+}
+.button
+{
+    border-radius: 10px;
+    color:rgb(8, 1, 19);
+    align-items: center;
+    width: 150px;
+    height:50px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(226, 105, 24);
+    outline: none;
+}
+.goals{
+    display: flex;
+    padding:15px;
+}
+span.col{
+    padding-inline: 5px;
+}
+.container > .row{
+    width:100%;
+    justify-content: space-evenly;
+}
+.button:hover{
+    background-color: rgb(224, 114, 151);
+    cursor: pointer;
+}
+#result{
+    font-size: x-large;
+    width:100%;
+    color:rgb(212, 33, 10)
+}
+.header{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom:50px;
+    font-size: xx-large;
+    font-weight: bold;
+    background-color:rgb(42, 165, 149);
+}
+#playagain
+{
+    margin-top: 10px;
+}

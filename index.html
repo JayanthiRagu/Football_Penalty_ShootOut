@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Penalty Shoot-Out</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">Football Penalty Shoot-Out</header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="name" id="name1"></span>
+                <img src="Assets/spain.jpg" height="100px" width="150px" alt="logo">
+                <div class="row goals" id="team1Goals">
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row score">
+                    <span id="score1"></span>
+                    <span>-</span>
+                    <span id="score2"></span>
+                </div>
+            </div>
+            <div class="col">
+                <span class="name" id="name2"></span>
+                <img src="Assets/Germany.jpg" height="100px" width="150px" alt="logo">
+                <div class="row goals" id="team2Goals">
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <button class="button" id="button" onclick="kickButton()">Kick</button>
+        </div>
+        <div class="row" id="result"></div>
+        <div class="row">
+            <button class="button" id="playagain" onclick="pageRefresh()">Play Again</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
